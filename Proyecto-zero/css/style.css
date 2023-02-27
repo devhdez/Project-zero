@@ -1,0 +1,152 @@
+/* Web Fonts ----------------------- */
+@font-face {
+    font-family: 'Abolition Regular';
+    src: url('../fonts/abolition-regular-webfont.woff') format ('woff');
+  }
+  
+  /* Base Styles --------------------- */
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 1.25em; /* 20px on most screens */  
+  }
+  
+  body {
+    margin: 1rem;
+    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    color: #454959;
+    font-weight: 300;
+    }
+  a {
+    color: #cc4e13;
+    text-decoration: none;
+  }
+  
+  h1, h2 {
+      font-family: 'Abolition Regular', Impact, Charcoal, sans-serif;
+      font-weight: normal;
+      line-height:1.5;
+  }
+  h1 {
+    text-shadow: 1px 2px 3px rgba(0,10,30,.5);
+    font-size: 4rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+  h1::after {
+    content: '\2193';
+    display: block;
+  }
+    
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  img {
+    width: 100%; /* responsive images */
+    border-radius: 10px;
+  }
+  
+  
+  /* Main Styles --------------------- */
+  header {
+    padding: 10vh 1rem;
+    margin: -1rem -1rem 1rem;
+    background: url(../img/humekselec.jpg) center / cover no-repeat #f3753b;
+    background-blend-mode: multiply;
+    background-position-y: top;
+    color: white;
+  }
+  header, footer {
+    text-align: center;
+  }
+  
+  #top .title{
+    letter-spacing: 1px;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    hyphens: auto;
+   
+  }
+  section {
+    padding: 4rem 0;
+    border-bottom: 1px dashed #9599a9;
+    
+  }
+  #wildlife {
+    display:flex;
+    flex-direction: column;
+    /* margin: 3vh 0 3vh; */
+    /* padding: 20% 15%; */
+    /* border-radius: 12px 12px 0 0;
+    background: url(../vid/vid1.mp4) center / cover #454959; */
+    color: black;
+    box-shadow: inset 0 0 20px 20px #000;
+    justify-content: center;
+  }
+  video {
+    display: flex;
+    justify-content: center;
+  }
+  #wildlife a {
+    color: #f7a27c;
+  }
+
+  /* #vid {
+    position: fixed;
+    
+  }   */
+
+  .callout {
+    display: block;
+    width: 250px;
+    padding: .25rem 1rem;
+    border-radius: 20px/10px;
+    margin: 1rem auto;
+    box-shadow: 1px 2px 3px rgba(0, 10, 30, .5);
+    background-color: #cc4e13;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .column:first-child {
+    margin-bottom: 4rem;
+  }
+  /* Media Queries ------------------- */
+  @media screen and (min-width: 720px) {
+    header {
+      padding: 20vh 1rem;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    h1::after {
+      margin-top: 1rem;
+    }
+    .title {
+      font-size: 1.25rem;
+    }
+    .intro {
+      padding: 0 15%;
+      font-size: 1.1rem;
+    }
+    .column {
+      display: inline-block;
+      width: 48%;
+      margin-right: -4px;
+    }
+    .column:first-child {
+      margin-right: calc(4% - 4px);
+      margin-bottom: 0;
+    }
+  }
+  
+  
